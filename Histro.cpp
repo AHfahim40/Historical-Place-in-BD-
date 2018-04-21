@@ -1,5 +1,5 @@
 #include<iostream>
-//include<graphics.h>
+#include<graphics.h>
 
 #include<stdlib.h>
 
@@ -11,10 +11,13 @@ using namespace std;
         int display()
         {
             cout<<"Historical Place in BD\n"<<endl;
+            initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\welcome.jpg",0,0,300,300);
 
         }
 
     };
+
 
 class Mahastangarh : public Bangladesh
 
@@ -27,6 +30,8 @@ class Mahastangarh : public Bangladesh
     int histro_place;
 
 int display(){
+    initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\mahastangarh.jpg",0,0,300,300);
     cout<<"\nMahastangarh\n";
     cout<<"Cost is 35 tk from Bogra\n";
     cout<<"Time is 30 miniutes from Bogra\n";
@@ -43,8 +48,12 @@ class ShalbanVihara : public Bangladesh
 
 {
 
+
 public :
-    int display(){
+ int display(){
+     initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\shalban.jpg",0,0,300,300);
+
 
     cout<<"\nShalban Vihara\n";
     cout<<"Cost is 20 tk from Comilla\n";
@@ -69,6 +78,8 @@ class SomapuraMahavihara : public Bangladesh
 
 public :
     int display(){
+        initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\paharpur.jpg",0,0,300,300);
     cout<<"\nSomapura Mahavihara\n";
     cout<<"Cost is 60 tk from Naogaon\n";
     cout<<"Time is 1 h 8 min from Naogaon\n";
@@ -91,6 +102,8 @@ class NandailDighi : public Bangladesh
 
 public :
     int display(){
+        initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Nandail Dighi.jpg",0,0,300,300);
     cout<<"\nNandail Dighi\n";
     cout<<"Cost is 10 tk from Kalai,Joypurhat\n";
     cout<<"Time is 15 min from Kalai,Joypurhat\n";
@@ -110,6 +123,8 @@ class HindaKasbaShahiMosque : public Bangladesh
 
 public :
     int display(){
+        initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Hinda.jpg",0,0,300,300);
     cout<<"\nHinda Kasba Shahi Mosque\n";
     cout<<"Cost is 30 tk from Joypurhat\n";
     cout<<"Time is 38 min from Joypurhat\n";
@@ -129,6 +144,8 @@ class TeestaBarrage : public Bangladesh
 
 public :
     int display(){
+         initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Teesta.jpg",0,0,300,300);
     cout<<"\nTeesta Barrage\n";
     cout<<"Cost is 80 tk from Rangpur\n";
     cout<<"Time is 1 h 48 min from Rangpur\n";
@@ -152,6 +169,8 @@ class LalbaghFort: public Bangladesh
 
 public :
     int display(){
+        initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Lalbag.jpg",0,0,300,300);
     cout<<"\nLalbagh Fort\n";
     cout<<"Cost is 20 tk from Dhaka\n";
     cout<<"Time is 46 min from Dhaka\n";
@@ -174,6 +193,8 @@ class CoxBazar: public Bangladesh
 
 public :
     int display(){
+    initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Cox's Bazar.jpg",0,0,300,300);
     cout<<"\nCox's Bazar\n";
     cout<<"Cost is 250 tk from Chittagong\n";
     cout<<"Time is 4 h 39 min from Chittagong\n";
@@ -197,6 +218,8 @@ class SajekValley: public Bangladesh
 
 public :
     int display(){
+        initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Sajek Valley.jpg",0,0,300,300);
     cout<<"\nSajek Valley\n";
     cout<<"Cost is 200 tk from Rangamati\n";
     cout<<"Time is 4 h 15 min from Rangamati\n";
@@ -218,6 +241,8 @@ class Jaflong: public Bangladesh
 
 public :
     int display(){
+        initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\Jaflong.jpg",0,0,300,300);
     cout<<"\nJaflong\n";
     cout<<"Cost is 100 tk from Sylhet\n";
     cout<<"Time is 2 h 13 min from Sylhet\n";
@@ -319,12 +344,20 @@ public :
 
             case 0 :
 
+
+
+
+                     initwindow(300,300,"Images");
+    readimagefile("F:\\PicsArt\\goodbye2.jpg",0,0,300,300);
                 cout<<"\n          ******* Good Bye *******"<<endl;
+
+
                 return 0;
 
-            }
+}
 
-            cout<<"\nDo you went to continue (Y/N) : ";
+
+   cout<<"\nDo you went to continue (Y/N) : ";
             cin>>Ch1;
               system("CLS");
 
@@ -334,5 +367,6 @@ public :
           return 0;
 
         }
+
 
 
